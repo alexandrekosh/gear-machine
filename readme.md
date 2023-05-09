@@ -1,8 +1,8 @@
-# Gear Machine ⚙
+# ⚙ Gear Machine 
 
 gear machine é um programa que inicialmente foi criado para a turma de mecanica do ifpa, tendo como sua função calcular engrenagens de dentes retos, conica e parafuso sem fim.
 
-## 🔹Tecnologias Utilizadas 
+## 🔹 Tecnologias Utilizadas 
 - Html
 - Css
 - JavaScript
@@ -13,6 +13,6 @@ gear machine é um programa que inicialmente foi criado para a turma de mecanica
 Acesse o layout inicial clicando [aqui](https://www.figma.com/file/PcWILrQq3lXYz76Jt1doqY/CM?type=design&node-id=0-1&t=1SS8n6bfvfwfOLl6-0)
 
 ## 👨‍💻 Contribuidores 
-| [](https://github.com/alexandrekosh) | [](https://github.com/FelipeSenna1) |
+| ![foto de perfil](./.github/avatar-minimalista.png) | ![foto de perfil](./.github/felipesenna.jpeg) |
 | ------------- | ------------- |
-| Alexande Medeiros  | Felipe Senna |
+| [Alexande Medeiros](https://github.com/alexandrekosh) | [Felipe Senna](https://github.com/FelipeSenna1) |
