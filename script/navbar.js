@@ -42,3 +42,13 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+
+
+    $('.btn-horario').click(()=> {
+      $('#engrenagem-home').animate({width: '200px'}, {duration: 200})
+    })
+    
+    $('.btn-antihorario').click(()=> {
+      $('#engrenagem-home').animate({width: '600px'}, {duration: 200})
+    })

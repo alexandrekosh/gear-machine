@@ -1,54 +1,89 @@
 #home {
     justify-content: center;
     align-items: center;
-
     font-family: 'K2D', sans-serif;
-}
-
-.description-home {
-    width: max-content;
-    margin: 20rem auto;
 }
 
 .container-home{
     position: relative;
-    text-align: center;
-    
     height: 50rem;
-    width: 50rem;
+    width: 60rem;
+
+    margin-top: 10rem;
 }
 
-.engrenagem-home {
+.description-home {
+    text-align: center;
+    margin: 17rem 0;
+}
+
+h1:first-child {
+    font-size: 4rem;
+}
+
+
+#engrenagem-home {
     position: absolute;
-    height: 50rem;
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    border: 1px solid #59A7C9;
+    border-radius: 50%;
+    padding: 2rem;
 
     opacity: 0.9;
-    animation: rotate 30s ease;
+    /* animation: giro-antihorario 1s ; */
+}
+
+.container-buttons-home {
+    height: 45%;
+    width: 100%;
+    background-color: var(--blue-white);
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 h1 {
-    color: var(--color-white-2);
+    color: var(--color-white-1);
     font-weight: 500;
     font-size: 3rem
 }
 
 h1 span {
-    color: #59A7C9;
     margin-left: 1rem;
+    color: #59A7C9;
 }
 
-.buttons button {
-
-    margin-top: 2rem;
+.buttons-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
-@keyframes rotate {
+.buttons-home button{
+    all: unset;
+    color: #59A7C9;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.buttons-home button i {
+    font-size: 4rem;
+}
+
+@keyframes giro-horario {
     to {
-        transform: rotate(360deg);
+        transform: rotate(46deg);
+    }
+}
+
+@keyframes giro-antihorario {
+    to {
+        transform: rotate(-46deg);
     }
 }

@@ -34,3 +34,7 @@
   .flex {
     display: flex;
   }
+
+  :root {
+    scroll-behavior: smooth;
+  }

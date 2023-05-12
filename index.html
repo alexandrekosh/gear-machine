@@ -38,18 +38,22 @@
     </header>
     <section id="home" class="flex">
         <div class="container-home">
-            <img src="./assets/engrenagen-home.svg" alt="engrenagem da home" class="engrenagem-home">
+            <img src="./assets/engrenagen-home.svg" alt="engrenagem da home" id="engrenagem-home">
             <div class="description-home">
                 <h1>Calcule</h1>
                 <h1>Eng.<span>Dentes Retos</span></h1>
-                <div class="buttons">
-                    <button><i class="ph ph-caret-circle-double-left"></i></button>
-                    <button>Calcular</button>
-                    <button><i class="ph ph-caret-circle-double-right"></i></button>
+                <div class="container-buttons-home">
+                    <div class="buttons-home">
+                        <button class="btn-horario"><i class="ph ph-caret-circle-double-left"></i></button>
+                        <button>calcular</button>
+                        <button class="btn-antihorario"><i class="ph ph-caret-circle-double-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="./script/navbar.js"></script>
 </body>
