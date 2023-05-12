@@ -1,0 +1,54 @@
+#home {
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'K2D', sans-serif;
+}
+
+.description-home {
+    width: max-content;
+    margin: 20rem auto;
+}
+
+.container-home{
+    position: relative;
+    text-align: center;
+    
+    height: 50rem;
+    width: 50rem;
+}
+
+.engrenagem-home {
+    position: absolute;
+    height: 50rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    opacity: 0.9;
+    animation: rotate 30s ease;
+}
+
+h1 {
+    color: var(--color-white-2);
+    font-weight: 500;
+    font-size: 3rem
+}
+
+h1 span {
+    color: #59A7C9;
+    margin-left: 1rem;
+}
+
+.buttons button {
+
+    margin-top: 2rem;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
