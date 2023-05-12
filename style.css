@@ -1,10 +1,13 @@
+/* @import url('./style/home.css'); */
+@import url('./style/navbar.css');
+@import url('./style/break-points.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-decoration: none;
   }
   
   :root {
@@ -23,87 +26,11 @@
     background: var(--blue-white);
   }
 
+  a {
+    color: var(--color-white-1);
+    text-decoration: none;
+  }
+
   .flex {
     display: flex;
-  }
-  
-  /*Header*/
-  .logo {
-    font-family: 'K2D', sans-serif;
-    font-size: 3rem;
-    margin-left: 3rem;
-  }
-
-  header nav {
-    background: var(--blue-black);
-    color: var(--color-white-1);
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav ul {
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    color: var(--color-white-1);
-  }
-
-  #switch {
-    position: relative;
-    width: 6rem;
-    /* margin: 1rem; */
-  }
-  
-  #switch button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    z-index: 1;
-    width: 2rem;
-    height: 2rem;
-    margin: 0rem 0.4rem;
-    background:var(--blue-black) no-repeat center;
-    border: 0;
-    border-radius: 50%;
-    animation: slide-back .2s;
-  }
-  
-  .light #switch button {
-    animation: slide-in .2s forwards;
-  }
-  
-  /* #switch button:hover {
-    outline: 8px solid var(--color-white-1) ;
-  }  */
-  
-  #switch span {
-    display: block;
-    width: 5.5rem;
-    height: 2.5rem;
-    background: var(--color-white-1);
-    border: 1px solid var(--color-white-1);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 9999px;
-  }
-
-  @keyframes slide-in {
-    from {
-      left: 0
-    }
-    to {
-      left: 50%
-    }
-  }
-  
-  @keyframes slide-back {
-    from {
-      left: 50%
-    }
-    to {
-      left: 0
-    }
   }

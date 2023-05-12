@@ -7,23 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Gear Machine</title>
 </head>
 <body>
     <header>
         <nav class="flex">
-            <div class="logo">Gear Machine</div>
-            <ul class="flex">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="">biblioteca</a>
-                </li>
-                <li>
-                    <a href="">engrenagens</a>
-                </li>
+            <a href="/" class="logo">Gear Machine</a>
+            
+            <ul class="nav-list flex">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">biblioteca</a></li>
+                <li><a href="#">engrenagens</a></li>
                 <li>
                     <div id="switch" onclick="toggleMode()">
                         <button>
@@ -33,8 +28,15 @@
                     </div>
                 </li>
             </ul>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./script/navbar.js"></script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+
+.logo {
+    font-family: 'K2D', sans-serif;
+    font-size: 3rem;
+  }
+
+  header nav {
+    background: var(--blue-black);
+    color: var(--color-white-1);
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+  
+  .nav-list li  {
+    color: var(--color-white-1);
+    margin-right: 3rem;
+  }
+
+  /*SWITCH*/
+
+  #switch {
+    position: relative;
+    width: 6rem;
+  }
+  
+  #switch button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem .4rem;
+    background:var(--blue-black) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    animation: slide-back .2s;
+  }
+  
+  .light #switch button {
+    animation: slide-in .2s forwards;
+  }
+  
+  #switch button:hover {
+    outline: .8rem solid rgba(255, 255, 255, 0.3) ;
+  } 
+  
+  #switch span {
+    display: block;
+    width: 5.5rem;
+    height: 2.5rem;
+    background: var(--color-white-1);
+    border: 1px solid var(--color-white-1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+  }
+
+  @keyframes slide-in {
+    from {
+      left: 0
+    }
+    to {
+      left: 50%
+    }
+  }
+  
+  @keyframes slide-back {
+    from {
+      left: 50%
+    }
+    to {
+      left: 0
+    }
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 2.5rem;
+    height: .1rem;
+    background: #fff;
+    margin: .8rem;
+    transition: .3s;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-.8rem, .8rem);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-.5rem, -.5rem);
+  }
